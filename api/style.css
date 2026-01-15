@@ -56,6 +56,7 @@ body {
     font-weight: 700;
     color: var(--white);
 }
+
 .navbar .navbar-logo .logo-name span {
     color: var(--primary);
     font-style: italic;
@@ -71,6 +72,7 @@ body {
 .navbar .navbar-nav a:hover {
     color: var(--primary);
 }
+
 .navbar .navbar-nav a::after {
     content: '';
     display: block;
@@ -157,6 +159,7 @@ body {
     padding: 1.4rem 7%;
     max-width: 60rem;
 }
+
 .hero .content h1 {
     font-size: 5rem;
     color: var(--white);
@@ -166,11 +169,12 @@ body {
 
 .hero .content h1 span {
     color: var(--primary);
+    font-style: italic;
 }
 
 .hero .content p {
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     line-height: 1.4;
     font-weight: 100;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -473,5 +477,8 @@ footer .credit a {
 @media (max-width: 450px) {
     html {
         font-size: 55%;
+    }
+    .hero .content {
+        max-width: 40rem;
     }
 }
