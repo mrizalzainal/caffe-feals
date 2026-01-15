@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 7% ;
+    padding: 1.3rem 6% ;
     background-color: rgba(1, 1, 1, 0.8);
     border-bottom: 1px solid #513c28;
     position: fixed;
@@ -37,13 +37,26 @@ body {
     right: 0;
     z-index: 9999;
 }
-
 .navbar .navbar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16rem;
+    height: 5rem;
+}
+
+.navbar .navbar-logo img {
+    width: 4rem;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+
+}
+.navbar .navbar-logo .logo-name {
     font-size: 2rem;
     font-weight: 700;
     color: var(--white);
 }
-.navbar .navbar-logo span {
+.navbar .navbar-logo .logo-name span {
     color: var(--primary);
     font-style: italic;
 }
