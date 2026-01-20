@@ -3,6 +3,7 @@
     --primary2: #91653a;
     --bg: #010101;
     --white: #f4f4f4;
+    --grey: #666;
 }
 
 * {
@@ -202,12 +203,14 @@ body {
 
 .about,
 .menu,
+.products,
 .contact{
     padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
+.products h2,
 .contact h2 {
     text-align: center;
     font-size: 2.6rem;
@@ -215,6 +218,7 @@ body {
 }
 .about h2 span,
 .menu h2 span,
+.products h2 span,
 .contact h2 span {
     color: var(--primary);
 }
@@ -256,6 +260,7 @@ margin-bottom: 1rem;
 }
 
 .menu p,
+.products p,
 .contact p {
     text-align: center;
     max-width: 30rem;
@@ -285,6 +290,74 @@ margin-bottom: 1rem;
     margin-top: 1rem auto 0.5rem;
 }
 
+
+/* Products Section */
+
+.products .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.products .product-card {
+    text-align: center;
+    border: 1px solid var(--grey);
+    padding: 2rem;
+}
+
+.products .product-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.1rem;
+}
+
+.products .product-icons a {
+    width: 4rem;
+    height: 4rem;
+    color: var(--white);
+    margin: 0.3rem;
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .product-icons a:hover { 
+    background-color: var(--primary2);
+    border: 1px solid var(--primary);
+}
+
+.products .product-image img {
+    height: 25rem;
+}
+
+.products .product-content h3 {
+    font-size: 2rem;
+}
+
+.products .product-stars {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: var(--primary);
+}
+
+.products .product-stars .star {
+    fill: var(--primary);
+}
+
+.products .product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.products .product-price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
+}
 /* Contact Section */
 
 .contact .row{
